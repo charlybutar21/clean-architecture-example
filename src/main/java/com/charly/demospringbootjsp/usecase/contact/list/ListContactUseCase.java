@@ -34,7 +34,7 @@ public class ListContactUseCase implements ListContactInputBoundary{
         presenter.present(constructResponseModel(contactsPage));
     }
 
-    private Specification<Contact> buildSpecification(ListContactRequestModel requestModel) {
+    Specification<Contact> buildSpecification(ListContactRequestModel requestModel) {
         return (Root<Contact> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
             Predicate predicate = criteriaBuilder.conjunction();
 

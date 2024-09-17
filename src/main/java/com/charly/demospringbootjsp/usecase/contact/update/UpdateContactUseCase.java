@@ -4,7 +4,6 @@ import com.charly.demospringbootjsp.entity.Contact;
 import com.charly.demospringbootjsp.exception.ContactNotFoundException;
 import com.charly.demospringbootjsp.repository.ContactRepository;
 import lombok.AllArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -14,7 +13,6 @@ import java.util.Optional;
 public class UpdateContactUseCase implements UpdateContactInputBoundary{
 
     private final ContactRepository contactRepository;
-    private final ModelMapper modelMapper;
 
     @Override
     public void execute(UpdateContactRequestModel requestModel) {

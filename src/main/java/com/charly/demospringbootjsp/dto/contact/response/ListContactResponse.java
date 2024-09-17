@@ -1,7 +1,6 @@
 package com.charly.demospringbootjsp.dto.contact.response;
 
 import lombok.Data;
-
 import java.util.List;
 
 @Data

@@ -2,7 +2,6 @@ package com.charly.demospringbootjsp.usecase.contact.list;
 
 import lombok.Builder;
 import lombok.Data;
-
 import java.util.List;
 
 @Data

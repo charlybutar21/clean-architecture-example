@@ -23,5 +23,4 @@ public class DetailContactController {
         useCase.execute(id, presenter);
         return presenter.getResponse();
     }
-
 }
