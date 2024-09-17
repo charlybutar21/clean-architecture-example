@@ -9,6 +9,14 @@
 </head>
 <body>
 <div class="container">
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="${pageContext.request.contextPath}/">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/contacts">Contact Management</a></li>
+        </ul>
+    </nav>
+
     <!-- Success/Error Messages -->
     <c:if test="${not empty successMessage}">
         <div class="alert alert-success" id="successMessage">${successMessage}</div>
